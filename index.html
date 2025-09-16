@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">ManiVID3D</h1>
+            <h1 class="title is-1 publication-title">ManiVID-3D: Generalizable View-Invariant Reinforcement Learning for Robotic Manipulation via Disentangled 3D Representations</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -91,7 +91,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2509.11125" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -114,7 +114,7 @@
 
                   <!-- ArXiv abstract Link -->
                   <span class="link-block">
-                    <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    <a href="https://arxiv.org/abs/2509.11125" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -165,12 +165,12 @@
   <div class="container is-max-desktop">
       <div class="hero-body">
           <div class="has-text-centered">
-              <img src="static/images/carousel1.jpg" 
+              <img src="static/images/Model.png" 
                     alt="项目展示图" 
                     class="teaser-image">
           </div>
           <h2 class="subtitle has-text-centered">
-              Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+              Overview of ManiVID-3D. (A) In the training phase, our method consists of two key components: (a) Pretrained ViewNet aligns arbitrary-viewpoint clouds collected in simulation to a unified frame without extrinsic calibration; (b) A disentanglement encoder extracts view-invariant features that are used to train manipulation policies with strong cross-view generalization. (B) In the deployment phase, we introduce a multi-stage processing pipeline specifically designed for camera-coordinate point clouds to bridge the sim-to-real domain gap, enabling zero-shot transfer to real-world deployment.
           </h2>
       </div>
   </div>
@@ -185,7 +185,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Deploying visual reinforcement learning (RL) policies in real-world manipulation is often hindered by camera viewpoint changes. A policy trained from a fixed front-facing camera may fail when the camera is shifted—an unavoidable situation in real-world settings where sensor placement is hard to manage appropriately. Existing methods often rely on precise camera calibration or struggle with large perspective changes. To address these limitations, we propose ManiVID-3D, a novel 3D RL architecture designed for robotic manipulation, which learns view-invariant representations through self-supervised disentangled feature learning. The framework incorporates ViewNet, a lightweight yet effective module that automatically aligns point cloud observations from arbitrary viewpoints into a unified spatial coordinate system without the need for extrinsic calibration. Additionally, we develop an efficient GPU-accelerated batch rendering module capable of processing over 5000 frames per second, enabling large-scale training for 3D visual RL at unprecedented speeds. Extensive evaluation across 10 simulated and 5 real-world tasks demonstrates that our approach achieves a 44.7\% higher success rate than state-of-the-art methods under viewpoint variations while using 80\% fewer parameters. The system's robustness to severe perspective changes and strong sim-to-real performance highlight the effectiveness of learning geometrically consistent representations for scalable robotic manipulation in unstructured environments.
           </p>
         </div>
       </div>
@@ -195,7 +195,7 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/ManiVID3Dvideo.mp4"
         type="video/mp4">
       </video>
       <!-- <h2 class="subtitle has-text-centered">
