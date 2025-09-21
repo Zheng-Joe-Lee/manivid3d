@@ -185,7 +185,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Deploying visual reinforcement learning (RL) policies in real-world manipulation is often hindered by camera viewpoint changes. A policy trained from a fixed front-facing camera may fail when the camera is shifted—an unavoidable situation in real-world settings where sensor placement is hard to manage appropriately. Existing methods often rely on precise camera calibration or struggle with large perspective changes. To address these limitations, we propose ManiVID-3D, a novel 3D RL architecture designed for robotic manipulation, which learns view-invariant representations through self-supervised disentangled feature learning. The framework incorporates ViewNet, a lightweight yet effective module that automatically aligns point cloud observations from arbitrary viewpoints into a unified spatial coordinate system without the need for extrinsic calibration. Additionally, we develop an efficient GPU-accelerated batch rendering module capable of processing over 5000 frames per second, enabling large-scale training for 3D visual RL at unprecedented speeds. Extensive evaluation across 10 simulated and 5 real-world tasks demonstrates that our approach achieves a 44.7\% higher success rate than state-of-the-art methods under viewpoint variations while using 80\% fewer parameters. The system's robustness to severe perspective changes and strong sim-to-real performance highlight the effectiveness of learning geometrically consistent representations for scalable robotic manipulation in unstructured environments.
+            Deploying visual reinforcement learning (RL) policies in real-world manipulation is often hindered by camera viewpoint changes. A policy trained from a fixed front-facing camera may fail when the camera is shifted—an unavoidable situation in real-world settings where sensor placement is hard to manage appropriately. Existing methods often rely on precise camera calibration or struggle with large perspective changes. To address these limitations, we propose ManiVID-3D, a novel 3D RL architecture designed for robotic manipulation, which learns view-invariant representations through self-supervised disentangled feature learning. The framework incorporates ViewNet, a lightweight yet effective module that automatically aligns point cloud observations from arbitrary viewpoints into a unified spatial coordinate system without the need for extrinsic calibration. Additionally, we develop an efficient GPU-accelerated batch rendering module capable of processing over 5000 frames per second, enabling large-scale training for 3D visual RL at unprecedented speeds. Extensive evaluation across 10 simulated and 5 real-world tasks demonstrates that our approach achieves a 44.7% higher success rate than state-of-the-art methods under viewpoint variations while using 80% fewer parameters. The system's robustness to severe perspective changes and strong sim-to-real performance highlight the effectiveness of learning geometrically consistent representations for scalable robotic manipulation in unstructured environments.
           </p>
         </div>
       </div>
@@ -509,14 +509,11 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{li2025manivid3dgeneralizableviewinvariantreinforcement,
-      title={ManiVID-3D: Generalizable View-Invariant Reinforcement Learning for Robotic Manipulation via Disentangled 3D Representations}, 
-      author={Zheng Li and Pei Qu and Yufei Jia and Shihui Zhou and Haizhou Ge and Jiahang Cao and Jinni Zhou and Guyue Zhou and Jun Ma},
-      year={2025},
-      eprint={2509.11125},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2509.11125}, 
+      <pre><code>@article{li2025manivid,
+  title={ManiVID-3D: Generalizable View-Invariant Reinforcement Learning for Robotic Manipulation via Disentangled 3D Representations},
+  author={Li, Zheng and Qu, Pei and Jia, Yufei and Zhou, Shihui and Ge, Haizhou and Cao, Jiahang and Zhou, Jinni and Zhou, Guyue and Ma, Jun},
+  journal={arXiv preprint arXiv:2509.11125},
+  year={2025}
 }</code></pre>
     </div>
 </section>
